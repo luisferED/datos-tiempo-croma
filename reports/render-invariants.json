@@ -1,0 +1,21 @@
+{
+  "changed_drawing_methods": [
+    "_dibujar_pnt"
+  ],
+  "only_change": "Cache existing PNT scaling; same scaling parameters",
+  "original_sha256": "13a637421f243d603cf2e1fdbe4681a6a445d71d0b7d34b63d451089fb483ee3",
+  "current_sha256": "79fa2cdf2efeaa6fcf10cc1fac6cf0e8a7454e9869ef8c04f8936780615371b3",
+  "unchanged_drawing_methods": [
+    "paintEvent",
+    "_dibujar_pixmap_cover",
+    "_dibujar_fondo",
+    "_dibujar_cabecera",
+    "_dibujar_mapa",
+    "_dibujar_destino",
+    "_dibujar_icono_clima",
+    "_dibujar_actual",
+    "_dibujar_nubes_fondo_extendido",
+    "_dibujar_extendido",
+    "_dibujar_espera"
+  ]
+}

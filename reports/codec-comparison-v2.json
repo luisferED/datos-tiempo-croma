@@ -1,0 +1,17 @@
+{
+  "qt": {
+    "mean_ms": 13.786379999874043,
+    "heartbeat_gap_p95_ms": 1.6744000022299588,
+    "heartbeat_max_gap_ms": 2.3222000017995015,
+    "bytes": 96094
+  },
+  "pillow": {
+    "mean_ms": 6.871728751139017,
+    "heartbeat_gap_p95_ms": 5.102200011606328,
+    "heartbeat_max_gap_ms": 7.005999999819323,
+    "bytes": 96094
+  },
+  "identical_quantization": true,
+  "identical_decoded_pixels": true,
+  "identical_bytes": false
+}

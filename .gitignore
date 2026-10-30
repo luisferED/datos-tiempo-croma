@@ -1,0 +1,15 @@
+﻿.env
+.env.*
+!.env.example
+*.sqlite*
+*.db
+*.db-*
+*.backup*
+uploads_web/
+tmp/
+reports/private/
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.log

@@ -1,0 +1,4 @@
+min_lon=-69.65
+max_lon=-57.45
+min_lat=-22.90
+max_lat=-9.65

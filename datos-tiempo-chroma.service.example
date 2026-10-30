@@ -1,0 +1,31 @@
+[Unit]
+Description=EL DEBER - Datos del Tiempo con control web
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=luis
+Group=luis
+WorkingDirectory=/opt/datos-tiempo-chroma
+Environment=PYTHONUNBUFFERED=1
+Environment=QT_XCB_GL_INTEGRATION=none
+Environment=CONTROL_USER=operador
+Environment=CONTROL_PASSWORD=CAMBIAR_ESTA_CLAVE
+Environment=WEB_ONLY=1
+Environment=OUTPUT_FPS=30
+Environment=IDLE_OUTPUT_FPS=2
+Environment=ANIMATION_FPS=30
+Environment=JPEG_QUALITY=74
+Environment=CAMERA_DURATION_MS=1600
+Environment=PANEL_DURATION_MS=520
+Environment=PNT_DURATION_MS=520
+Environment=ICON_CYCLE_SECONDS=1.6
+Environment=MAP_MAX_HEIGHT=1800
+ExecStart=/usr/bin/xvfb-run -a -s "-screen 0 1920x1080x24 -ac" /opt/datos-tiempo-chroma/.venv/bin/python -u /opt/datos-tiempo-chroma/app.py
+Restart=always
+RestartSec=5
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,47 @@
+services:
+  weather:
+    build: .
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 40s
+    expose:
+      - "6670"
+    environment:
+      CONTROL_USER: ${CONTROL_USER:?Configure CONTROL_USER}
+      CONTROL_PASSWORD: ${CONTROL_PASSWORD:?Configure CONTROL_PASSWORD}
+      VIDEO_USER: ${VIDEO_USER:?Configure VIDEO_USER}
+      VIDEO_PASSWORD: ${VIDEO_PASSWORD:?Configure VIDEO_PASSWORD}
+      OUTPUT_FPS: ${OUTPUT_FPS:-30}
+      ANIMATION_FPS: ${ANIMATION_FPS:-30}
+      JPEG_ENCODER: ${JPEG_ENCODER:-pillow}
+      CAPTURE_BACKEND: ${CAPTURE_BACKEND:-direct}
+      OUTPUT_DELAY_FRAMES: ${OUTPUT_DELAY_FRAMES:-0.85}
+      RENDER_CPU_AFFINITY: ${RENDER_CPU_AFFINITY:-}
+      OUTPUT_PROFILE: ${OUTPUT_PROFILE:-0}
+      JPEG_QUALITY: ${JPEG_QUALITY:-74}
+      OUTPUT_WIDTH: ${OUTPUT_WIDTH:-1920}
+      OUTPUT_HEIGHT: ${OUTPUT_HEIGHT:-1080}
+      CAMERA_DURATION_MS: ${CAMERA_DURATION_MS:-1600}
+      PANEL_DURATION_MS: ${PANEL_DURATION_MS:-520}
+      PNT_DURATION_MS: ${PNT_DURATION_MS:-520}
+      MAX_HTTP_CONNECTIONS: ${MAX_HTTP_CONNECTIONS:-24}
+    volumes:
+      - weather-data:/data
+    networks:
+      - dokploy-network
+    shm_size: 256mb
+    mem_limit: 2g
+    cpus: 2.0
+    pids_limit: 128
+    security_opt:
+      - no-new-privileges:true
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+volumes:
+  weather-data:
+networks:
+  dokploy-network:
+    external: true

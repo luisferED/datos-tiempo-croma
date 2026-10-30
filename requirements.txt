@@ -1,0 +1,5 @@
+﻿# Versions used in the local validation. Linux image build remains to be verified.
+PyQt6==6.12.0
+PyQt6-Qt6==6.12.0
+PyQt6-sip==13.13.0
+Pillow==13.0.0

@@ -1,0 +1,52 @@
+[
+  {
+    "command": [
+      "tools/test_pipeline.py"
+    ],
+    "returncode": 0,
+    "seconds": 5.985
+  },
+  {
+    "command": [
+      "tools/test_raster_modes.py"
+    ],
+    "returncode": 0,
+    "seconds": 2.163
+  },
+  {
+    "command": [
+      "tools/test_system.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.533
+  },
+  {
+    "command": [
+      "tools/test_all_sequences.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.33
+  },
+  {
+    "command": [
+      "tools/test_application.py"
+    ],
+    "returncode": 0,
+    "seconds": 14.464
+  },
+  {
+    "command": [
+      "tools/run_isolated.py",
+      "tools/test_broadcast_sequence.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.819
+  },
+  {
+    "command": [
+      "tools/compare_visual.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.699
+  }
+]

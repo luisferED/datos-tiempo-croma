@@ -1,0 +1,87 @@
+{
+  "logical_cpus": 12,
+  "physical_cpus": 10,
+  "samples": [
+    {
+      "monotonic": 115182.127431,
+      "cpu_percent_per_logical_cpu": [
+        50.0,
+        0.0,
+        69.1,
+        0.0,
+        31.8,
+        10.9,
+        4.8,
+        1.6,
+        15.6,
+        3.2,
+        0.0,
+        28.8
+      ],
+      "available_ram_mb": 887.7734375,
+      "system_ram_percent": 88.8,
+      "swap_used_mb": 2009.015625
+    },
+    {
+      "monotonic": 115185.6328395,
+      "cpu_percent_per_logical_cpu": [
+        66.7,
+        1.5,
+        56.2,
+        1.6,
+        18.5,
+        9.4,
+        1.6,
+        1.6,
+        17.2,
+        4.8,
+        0.0,
+        21.9
+      ],
+      "available_ram_mb": 814.3125,
+      "system_ram_percent": 89.7,
+      "swap_used_mb": 2009.015625
+    },
+    {
+      "monotonic": 115186.63412,
+      "cpu_percent_per_logical_cpu": [
+        66.2,
+        3.1,
+        61.5,
+        1.6,
+        21.5,
+        10.8,
+        10.9,
+        1.6,
+        12.5,
+        3.1,
+        0.0,
+        20.3
+      ],
+      "available_ram_mb": 807.7734375,
+      "system_ram_percent": 89.8,
+      "swap_used_mb": 2009.015625
+    },
+    {
+      "monotonic": 115187.6353337,
+      "cpu_percent_per_logical_cpu": [
+        86.2,
+        0.0,
+        79.7,
+        9.4,
+        17.2,
+        17.2,
+        17.2,
+        6.3,
+        18.8,
+        3.1,
+        0.0,
+        27.7
+      ],
+      "available_ram_mb": 787.18359375,
+      "system_ram_percent": 90.0,
+      "swap_used_mb": 2008.8906240463257
+    }
+  ],
+  "notes": "Read-only host observation during the local soak; no system setting changed. CPU affinity does not reserve CPUs from other processes."
+}

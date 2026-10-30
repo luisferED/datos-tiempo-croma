@@ -1,0 +1,17 @@
+*
+!app.py
+!runtime_support.py
+!pipeline_profile.py
+!jpeg_pipeline.py
+!requirements.txt
+!assets/
+!assets/**
+!tools/
+tools/*
+!tools/container-entrypoint.sh
+!Dockerfile
+
+!tools/benchmark.py
+!tools/test_broadcast_sequence.py
+
+!tools/mjpeg_receiver.py

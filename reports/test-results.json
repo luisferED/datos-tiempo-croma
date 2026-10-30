@@ -1,0 +1,38 @@
+[
+  {
+    "command": [
+      "tools/test_system.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.798
+  },
+  {
+    "command": [
+      "tools/test_all_sequences.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.968
+  },
+  {
+    "command": [
+      "tools/test_application.py"
+    ],
+    "returncode": 0,
+    "seconds": 14.518
+  },
+  {
+    "command": [
+      "tools/run_isolated.py",
+      "tools/test_broadcast_sequence.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.957
+  },
+  {
+    "command": [
+      "tools/compare_visual.py"
+    ],
+    "returncode": 0,
+    "seconds": 1.989
+  }
+]
