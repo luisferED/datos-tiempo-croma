@@ -4,8 +4,8 @@ services:
     init: true
     restart: unless-stopped
     stop_grace_period: 40s
-    expose:
-      - "6670"
+    ports:
+      - "6670:6670"
     environment:
       CONTROL_USER: ${CONTROL_USER:?Configure CONTROL_USER}
       CONTROL_PASSWORD: ${CONTROL_PASSWORD:?Configure CONTROL_PASSWORD}
